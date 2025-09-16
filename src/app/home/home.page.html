@@ -5,15 +5,28 @@
     </ion-toolbar>
   </ion-header>
 
-  <div class="pcf-main">
+  <div class="pcf__main">
+    <ion-text color="primary">
+      <p class="pcf__coin-count">
+        {{`Flip ${selectedValue} coin${selectedValue > 1 ? 's' : ''}`}}
+      </p>
+    </ion-text>
     <ion-range
       aria-label="Range with ticks"
       [ticks]="true"
       [snaps]="true"
       [min]="1"
       [max]="10"
-      labelPlacement="stacked"
-      label="Number of flips"
+      [pin]="true"
+      (ionChange)="rangeChange($event)"
     ></ion-range>
+
+    <ion-button size="large">Flip!</ion-button>
+  </div>
+
+  <div class="pcf__svg-dev">
+    <svg viewBox="-200 -200 400 400" width="200" height="200">
+      <circle cx="0" cy="0" r="100" fill="yellow" />
+    </svg>
   </div>
 </ion-content>

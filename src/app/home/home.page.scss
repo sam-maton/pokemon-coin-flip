@@ -1,4 +1,21 @@
-.pcf-main {
-  width: 80%;
-  margin: 10px auto;
+.pcf {
+  &__main {
+    width: 80%;
+    margin: 10px auto;
+    text-align: center;
+  }
+
+  &__coin-count {
+    margin-bottom: 0;
+  }
+
+  &__svg-dev {
+    width: 400px;
+    margin: auto;
+    text-align: center;
+
+    svg {
+      outline: 1px solid red;
+    }
+  }
 }
