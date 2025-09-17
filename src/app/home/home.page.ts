@@ -8,7 +8,6 @@ import {
   RangeCustomEvent,
   IonText,
   IonButton,
-  IonRippleEffect,
 } from '@ionic/angular/standalone';
 
 @Component({
@@ -16,7 +15,6 @@ import {
   templateUrl: 'home.page.html',
   styleUrls: ['home.page.scss'],
   imports: [
-    IonRippleEffect,
     IonButton,
     IonText,
     IonHeader,
